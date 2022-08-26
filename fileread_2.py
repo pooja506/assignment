@@ -1,9 +1,8 @@
+headers = ["Name", "Age", "City"]
 
-from prettytable import PrettyTable
-
-f = open("person.txt", "r")
-table = PrettyTable('Name','Age','City')
-for line in f:
+print(" ".join(headers))
+for line in open("person.txt", "r"):
     line = line.strip().split(",")
-    table.add(line)
-    print(table)
+    for i,word in enumerate(line):
+        print(word)
+    

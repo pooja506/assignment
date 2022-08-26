@@ -4,8 +4,9 @@ if i=="yes":
     weight = float(input("Enter weight: "))
     height = float(input("Enter height: "))
 
-    BMI = weight//(height*height)
-
+    BMI = weight//(height*height) #calculates BMI and floors the value
+ 
+    #checks the range of BMI
     if BMI in range(19,26):
         print(f"Your BMI is {BMI}.You are healthy")
 
